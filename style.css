@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .navbar-brand {
+    color: #E89625;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.navbar .navbar-nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-item {
+    margin-left: 20px;
+}
+
+.navbar .nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.navbar .nav-link:hover {
+    background-color: #575757;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-section {
+    margin-bottom: 10px;
+}
+
+.form-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-section input, .form-section textarea, .form-section select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #575757;
+}
+
+.section-container {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 40px;
+}
+
+#cv-preview-container {
+    margin-top: 40px;
+    width: 50%;
+}
+
+#cv-preview {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: white;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-question {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.faq-question.active + .faq-answer {
+    display: block;
+}
+
+.a4-size {
+    width: 210mm;
+    height: 297mm;
+}
+
+.big-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+img {
+    width: 150px;
+    height: 150px;
+   }
