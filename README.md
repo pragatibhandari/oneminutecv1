@@ -1,1 +1,1 @@
-# oneminutecv.com
+# CVmaker

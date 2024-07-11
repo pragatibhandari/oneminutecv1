@@ -93,14 +93,16 @@ h2 {
 }
 
 #cv-preview-container {
-    margin-top: 40px;
+    margin-top: 0px;
     width: 50%;
+    align-items: center;
 }
 
 #cv-preview {
-    border: 1px solid #ccc;
-    padding: 20px;
+    padding: 0px;
     background-color: white;
+    align-items: center;
+
 }
 
 .footer {
@@ -145,7 +147,7 @@ h2 {
 
 .big-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
@@ -153,4 +155,23 @@ h2 {
 img {
     width: 150px;
     height: 150px;
+    margin-bottom: auto;
    }
+
+   .two-columns{
+    display:flex;
+    flex-direction: row;
+   }
+.col-1{
+    width: 30%;
+    height:1123px;
+    background-size: cover;
+    background-color: rgb(141, 141, 182);
+    color: rgb(14, 13, 13);
+}
+.col-2{
+    width: 70%;
+    height:1123px;
+    background-color: rgb(182, 171, 141);
+    color: rgb(14, 13, 13);
+}

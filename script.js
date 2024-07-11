@@ -42,30 +42,31 @@ document.addEventListener('DOMContentLoaded', () => {
         let cvContent = `
             <div style="background-color: ${bgColor}; color: ${fontColor}; font-family: ${fontStyle}; font-size: ${fontSize};">
                 <div class="two-columns">
-                    <div>
+                    <div class="col-1">
                         ${pictureURL ? `<img src="${pictureURL}" alt="Profile Picture">` : ''}
-                         ${phone ? `<p>Phone: ${phone}</p>` : ''}
+                        ${phone ? `<p>Phone: ${phone}</p>` : ''}
                         ${email ? `<p>Email: ${email}</p>` : ''}
+                         ${address ? `<p>Address: ${address}</p>` : ''}
+                        ${personalWebsite ? `<p> ${personalWebsite}</p>` : ''}
+                        ${linkedin ? `<p> ${linkedin}</p>` : ''}
+                        ${github ? `<p> ${github}</p>` : ''}
+                        ${languages ? `<h2>Languages</h2><p>${languages}</p>` : ''}
+                        ${skills ? `<h2>Skills</h2><p>${skills}</p>` : ''}
+                        ${aboutMe ? `<h2>About Me</h2><p>${aboutMe}</p>` : ''}
                     </div>
-                    <div>
+                    <div class="col-2">
                         <h1>${name}</h1>
                         <h2>${jobTitle}</h2>
-                       
-                        ${address ? `<p>Address: ${address}</p>` : ''}
-                        ${personalWebsite ? `<p>Website: ${personalWebsite}</p>` : ''}
-                        ${linkedin ? `<p>LinkedIn: ${linkedin}</p>` : ''}
-                        ${github ? `<p>GitHub: ${github}</p>` : ''}
-                    </div>
-                </div>
-                ${languages ? `<h2>Languages</h2><p>${languages}</p>` : ''}
-                ${skills ? `<h2>Skills</h2><p>${skills}</p>` : ''}
-                ${aboutMe ? `<h2>About Me</h2><p>${aboutMe}</p>` : ''}
-                ${getWorkExperience()}
+                         ${getWorkExperience()}
                 ${getProjects()}
                 ${getEducation()}
                 ${getCertifications()}
                 ${getReferences()}
                 ${getAdditionalFields()}
+                    </div>
+                </div>
+
+               
             </div>
         `;
 
@@ -227,8 +228,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     
-    
-
     function addSection(containerId, className, html) {
         const container = document.getElementById(containerId);
         const section = document.createElement('div');
