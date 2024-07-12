@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', (e) => {
         e.preventDefault();
         generateCV();
-        cvPreviewContainer.style.display = 'block';
+        cvPreviewContainer.style.display = 'inline';
     });
 
     deletePictureButton.addEventListener('click', () => {
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         ${pictureURL ? `<img src="${pictureURL}" alt="Profile Picture">` : ''}
                         ${phone ? `<p>Phone: ${phone}</p>` : ''}
                         ${email ? `<p>Email: ${email}</p>` : ''}
-                         ${address ? `<p>Address: ${address}</p>` : ''}
+                        ${address ? `<p>Address: ${address}</p>` : ''}
                         ${personalWebsite ? `<p> ${personalWebsite}</p>` : ''}
                         ${linkedin ? `<p> ${linkedin}</p>` : ''}
                         ${github ? `<p> ${github}</p>` : ''}
@@ -57,16 +57,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="col-2">
                         <h1>${name}</h1>
                         <h2>${jobTitle}</h2>
-                         ${getWorkExperience()}
-                ${getProjects()}
-                ${getEducation()}
-                ${getCertifications()}
-                ${getReferences()}
-                ${getAdditionalFields()}
+                        ${getWorkExperience()}
+                        ${getProjects()}
+                        ${getEducation()}
+                        ${getCertifications()}
+                        ${getReferences()}
+                        ${getAdditionalFields()}
                     </div>
-                </div>
-
-               
+                </div>  
             </div>
         `;
 
